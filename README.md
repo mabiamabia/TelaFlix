@@ -1,13 +1,25 @@
-# TelaFlix
-Tela de filmes para demonstração de foco entre componentes
+<h1 align="center"> Tela Flix </h1>
 
+<h2 align="center">Tela de filmes para demonstração de foco entre componentes </h2>
+
+### Ferramentas utilizadas
 - Utilizar React
 
-Tarefas:
-
+### Tarefas:
+- dividir tarefas entre grau de esforço(pequeno, medio, longo)
 - Criar uma tela com trilhos de filmes
 - criar pelo menos 3 tipos de trilhos
 - utilizar o foco entre trilhos
 - consumir uma API
 - usar um useState para contar cliques em cada filme e exebir o numero de cliques(simulador de metrica)
 - Salvar o estado anterior (do foco e cliques)
+- Trocar tela ao clicar no filme e exibir informações e onde assistir(consumir api imdb?)
+- Fazer projeto no figma?
+- Obter todas as imagens para parte de design
+- Criar documentação
+
+## implementações futuras
+- saber onde assistir os filmes clicados
+- transformar catalogo em uma api
+- fazer catalogos de outras midias como musicas, livros
+- é possivel uma api seer alimentada por outra api?
