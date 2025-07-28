@@ -2,6 +2,9 @@
 
 <h2 align="center">Tela de filmes para demonstração de foco entre componentes </h2>
 
+<img width="1279" height="603" alt="image" src="https://github.com/user-attachments/assets/65ae2fa2-8763-4b3f-abdf-27a06ab26480" />
+
+
 ### Ferramentas utilizadas
 - Utilizar React
 
