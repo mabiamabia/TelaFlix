@@ -1,0 +1,13 @@
+.rail-movie {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 20px;
+
+  /* Scroll invisível */
+  scrollbar-width: none; /* Firefox */
+}
+
+.rail-movie::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
