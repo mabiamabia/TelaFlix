@@ -2,6 +2,8 @@
 
 <h2 align="center">Tela de filmes para demonstração de foco entre componentes </h2>
 
+[screen-capture.webm](https://github.com/user-attachments/assets/3cb61e79-5834-4a65-92de-1e734615004a)
+
 <img width="1279" height="603" alt="image" src="https://github.com/user-attachments/assets/65ae2fa2-8763-4b3f-abdf-27a06ab26480" />
 
 
