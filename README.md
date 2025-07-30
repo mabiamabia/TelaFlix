@@ -1,5 +1,3 @@
-<h1 align="center"> Tela Flix </h1>
-
 <img width="1024" height="313" alt="90eedfb9-45fc-4757-b342-6fdf07d5e7c4" src="https://github.com/user-attachments/assets/0e7311c0-35f4-4828-bf61-fd4342246d2d" />
 
 <h2 align="center">Tela de filmes para demonstração de foco entre componentes </h2>
