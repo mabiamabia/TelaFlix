@@ -1,6 +1,7 @@
 <h1 align="center"> Tela Flix </h1>
-
+<img width="1024" height="1024" alt="90eedfb9-45fc-4757-b342-6fdf07d5e7c4" src="https://github.com/user-attachments/assets/52e9d2b8-25ab-4374-b5fd-5cdfc8452123" />
 <h2 align="center">Tela de filmes para demonstração de foco entre componentes </h2>
+
 
 [screen-capture.webm](https://github.com/user-attachments/assets/3cb61e79-5834-4a65-92de-1e734615004a)
 
