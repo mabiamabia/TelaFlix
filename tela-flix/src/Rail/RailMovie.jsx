@@ -1,47 +1,38 @@
-
+import { useEffect, useState } from "react";
 import { MovieCard } from "../Card/MovieCard.jsx";
 import "./RailMovie.css";
 
-const movies = [
-  {
-    title: "Barbie",
-    posterUrl: "https://image.tmdb.org/t/p/w200//iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg"
-  },
-  {
-    title: "Jurassic Park",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/e/e7/Jurassic_Park_poster.jpg"
-  },
-   {
-    title: "Interstellar",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg"
-  },
-  {
-    title: "John Wick",
-    posterUrl:" https://upload.wikimedia.org/wikipedia/en/9/98/John_Wick_TeaserPoster.jpg"
+const API_KEY = "b5d2a951efdcc9e9e04a3c50c906d191";
+const BASE_URL = "https://api.themoviedb.org/3";
 
-  },
-  {
-    title: "KungFu Panda",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/7/76/Kungfupanda.jpg"
-  },
-  {
-    title: "Pantera Negra",
-    posterUrl: "https://image.tmdb.org/t/p/w200/uxzzxijgPIY7slzFvMotPv8wjKA.jpg"
-  },
-  {
-    title: "Frozen",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/0/05/Frozen_%282013_film%29_poster.jpg"
-  },
-];
+export function RailMovie({ endpoint = "/movie/popular", title  }) {
+  const [filmes, setFilmes] = useState([]);
 
-export function RailMovie() {
+  useEffect(() => {
+    async function buscarFilmes() {
+      try {
+        const resposta = await fetch(
+          `${BASE_URL}${endpoint}?api_key=${API_KEY}&language=pt-BR&page=1`
+        );
+        const dados = await resposta.json();
+        setFilmes(dados.results.slice(0, 8));
+      } catch (erro) {
+        console.error("Erro ao buscar filmes:", erro);
+      }
+    }
+
+    buscarFilmes();
+  }, [endpoint]);
+
   return (
     <div className="rail-movie">
-      {movies.map((movie, index) => (
+      <h1 className="rail-title">{title}</h1> 
+      {filmes.map((filme) => (
         <MovieCard
-          key={index}
-          title={movie.title}
-          posterUrl={movie.posterUrl}
+          key={filme.id}
+          title={filme.title}
+          posterUrl={`https://image.tmdb.org/t/p/w500${filme.poster_path}`}
+          movieUrl={`https://www.themoviedb.org/movie/${filme.id}`}
         />
       ))}
     </div>

@@ -9,6 +9,9 @@ Este README serve como uma lista de afazeres (to-do) para acompanhar o progresso
 - [x] Criar estrutura inicial do projeto
 - [x] Instalar dependências básicas (React)
 - [x] Criar componente `MovieCard`
+- [x] Integrar API do TMDB
+- [x] Adiciona Hover ao passar o mouse pelos filmes
+- [x] Abre link da descrição do filme em nova aba
 
 ## 🔄 Em andamento
 

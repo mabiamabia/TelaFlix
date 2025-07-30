@@ -4,10 +4,15 @@
   gap: 16px;
   padding: 20px;
 
-  /* Scroll invisível */
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none;
 }
 
 .rail-movie::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
+  display: none;
+}
+
+h1.title {
+  font-size: 24px;
+  color: white;
+  margin: 20px 0;
 }

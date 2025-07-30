@@ -2,16 +2,29 @@
   width: 150px;
   margin-right: 16px;
   text-align: center;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  color: white;
+  text-decoration: none;
 }
 
 .movie-card img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 14px;
   display: block;
+  transition: transform 0.3s ease;
 }
 
 .movie-card h3 {
   margin-top: 8px;
   font-size: 14px;
-  color: white;
+}
+
+.movie-card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.movie-card:hover img {
+  transform: scale(1.1);
 }

@@ -1,16 +1,21 @@
 import { RailMovie } from "./Rail/RailMovie.jsx";
 import { RailTopTen } from "./RailTopTen/RailTopTen.jsx";
+import { rails } from "./RailConfig/RailConfig.jsx";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="tilte">Mais assistidos</h1>
-        <RailMovie />
-        <h1 className="tilte">Assistir mais tarde</h1>
-        <RailTopTen />
-        <h1 className="tilte">Preferidos da sua lista</h1>
-        <RailMovie />
+        {rails.map((rail, index) => (
+          <div key={index}>
+            <h1 className="rail-title">{rail.title}</h1>
+            {rail.component === "top" ? (
+              <RailTopTen endpoint={rail.endpoint} />
+            ) : (
+              <RailMovie endpoint={rail.endpoint} />
+            )}
+          </div>
+        ))}
       </header>
     </div>
   );
