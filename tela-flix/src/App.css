@@ -1,15 +1,74 @@
-.App-header {
-  background-color: #282c34;
+.App {
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
   min-height: 100vh;
+  color: white;
+}
+
+.App-header {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.app-title {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px 0;
+}
+
+.app-title h1 {
+  font-size: 3rem;
+  margin: 0;
+  background: linear-gradient(45deg, #e50914, #ff6b6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+  text-shadow: 0 0 30px rgba(229, 9, 20, 0.3);
+}
+
+.app-title p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin: 10px 0 0 0;
+  font-weight: 300;
+}
+
+.rails-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(196, 11, 202);
+  gap: 30px;
 }
-h1.rail-title {
-  font-size: 24px;
-  color: rgb(204, 1, 1);
-  margin: 20px 0;
+
+.rail-section {
+  margin-bottom: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .App-header {
+    padding: 10px;
+  }
+  
+  .app-title h1 {
+    font-size: 2rem;
+  }
+  
+  .app-title p {
+    font-size: 1rem;
+  }
+  
+  .rails-container {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-title h1 {
+    font-size: 1.5rem;
+  }
+  
+  .app-title p {
+    font-size: 0.9rem;
+  }
 }
